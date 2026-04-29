@@ -1,0 +1,43 @@
+<!-- partials/meta.html — shared <head> meta. Inject via <div data-include="/partials/meta.html"></div>. -->
+<!--
+  Per-page <title>, meta description, OG image, and canonical link must be set
+  inline in each page <head>; this partial provides the cross-page baseline.
+-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#faf7f2">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Brand favicon (heart-line motif). Generated at /assets/svg/heart-line.svg -->
+<link rel="icon" type="image/svg+xml" href="/assets/svg/heart-line.svg">
+
+<!-- Google Fonts — preconnect + display=swap so paint isn't blocked -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Libre+Franklin:wght@300;400;500&family=Pinyon+Script&display=swap">
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Libre+Franklin:wght@300;400;500&family=Pinyon+Script&display=swap">
+
+<!-- Site stylesheets — tokens first so cascade resolves correctly. -->
+<link rel="stylesheet" href="/assets/css/reset.css">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/typography.css">
+<link rel="stylesheet" href="/assets/css/layout.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/pages.css">
+
+<!-- Open Graph defaults (override per page) -->
+<meta property="og:site_name" content="Infinite Love Story">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="/assets/images/heroes/hero-homepage-desktop.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@infinitelovestory">
+
+<!-- TODO: replace with real OG fallback image once approved -->

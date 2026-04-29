@@ -1,0 +1,58 @@
+{
+  "brand": {
+    "name": "Infinite Love Story",
+    "parent": "Shane Drummond Photo, CORP",
+    "tagline": "Capturing Timeless Moments of Love and Commitment",
+    "established": "2025",
+    "regions": ["30A", "Panama City Beach", "Florida Panhandle", "Destination"]
+  },
+  "contact": {
+    "email": "hello@infinitelovestory.com",
+    "phone": "",
+    "booking_url": "/pages/contact.html",
+    "honeybook_smart_file_embed": ""
+  },
+  "social": {
+    "instagram": "https://instagram.com/infinitelovestory",
+    "pinterest": "https://pinterest.com/infinitelovestory",
+    "tiktok": ""
+  },
+  "navigation": {
+    "primary": [
+      { "label": "Portfolio", "href": "/pages/portfolio.html", "key": "portfolio" },
+      { "label": "About", "href": "/pages/about.html", "key": "about" },
+      { "label": "Packages", "href": "/pages/packages.html", "key": "packages" },
+      { "label": "Journal", "href": "/pages/blog.html", "key": "blog" },
+      { "label": "FAQ", "href": "/pages/faq.html", "key": "faq" }
+    ],
+    "footer_explore": [
+      { "label": "Portfolio", "href": "/pages/portfolio.html" },
+      { "label": "About", "href": "/pages/about.html" },
+      { "label": "Packages & Pricing", "href": "/pages/packages.html" },
+      { "label": "Prints & Albums", "href": "/pages/print-album.html" },
+      { "label": "Journal", "href": "/pages/blog.html" },
+      { "label": "Wedding Guide", "href": "/pages/wedding-guide.html" },
+      { "label": "Contact", "href": "/pages/contact.html" }
+    ]
+  },
+  "newsletter": {
+    "platform": "flodesk",
+    "form_action": "",
+    "consent_copy": "We send seasonal love letters — no spam, ever."
+  },
+  "seo_defaults": {
+    "title_suffix": " — Infinite Love Story",
+    "default_description": "Editorial wedding and elopement photography along Florida's Panhandle, 30A, and Panama City Beach. Romantic. Cinematic. Timeless.",
+    "default_keywords": [
+      "Panhandle wedding photographer",
+      "30A beach wedding photography",
+      "Florida destination elopements",
+      "Panama City Beach wedding photographer",
+      "Florida film wedding photographer"
+    ]
+  },
+  "build": {
+    "include_strategy": "js-fetch",
+    "notes": "If migrating to a PHP host, replace data-include divs with <?php include __DIR__ . '/partials/header.html'; ?> in each page."
+  }
+}

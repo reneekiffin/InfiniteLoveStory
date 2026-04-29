@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Step 1 review — Hero at three breakpoints</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: #1a1a1a;
+      color: #faf7f2;
+      padding: 24px 16px 96px;
+    }
+    h1 {
+      font-family: "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+      margin: 0 0 8px;
+    }
+    p.lede { color: #c0bdb6; max-width: 70ch; line-height: 1.6; margin: 0 0 32px; }
+    .frames {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: 1fr;
+      max-width: 1700px;
+      margin: 0 auto;
+    }
+    @media (min-width: 1280px) {
+      .frames { grid-template-columns: 360px 800px 1fr; align-items: start; }
+    }
+    figure {
+      margin: 0;
+      border: 1px solid rgba(250,247,242,0.18);
+      background: #2a2a2a;
+      overflow: hidden;
+    }
+    figcaption {
+      padding: 10px 14px;
+      font-family: "Cinzel", serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #b8956a;
+      border-bottom: 1px solid rgba(250,247,242,0.15);
+    }
+    .frame-shell {
+      width: 100%;
+      overflow: auto;
+      background: #faf7f2;
+    }
+    iframe {
+      display: block;
+      border: 0;
+      background: #faf7f2;
+    }
+    .frame-mobile  iframe { width: 360px;  height: 720px; }
+    .frame-tablet  iframe { width: 800px;  height: 1100px; }
+    .frame-desk    iframe { width: 1440px; height: 900px; }
+    a.full {
+      display: inline-block;
+      margin-top: 24px;
+      font-family: "Cinzel", serif;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #b8956a;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 2px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Step 1 review — homepage hero across breakpoints</h1>
+  <p class="lede">
+    Three iframes render <code>/index.html</code> at fixed widths so you can sanity-check
+    layout, headline scale, and CTA placement without resizing your browser.
+    The persistent mobile bottom CTA is visible at 360 and 800; it disappears at 1024+.
+    Real photography will replace the placeholder SVG once images are dropped.
+  </p>
+
+  <div class="frames">
+
+    <figure class="frame-mobile">
+      <figcaption>Mobile &mdash; 360 &times; 720 (smallest realistic phone)</figcaption>
+      <div class="frame-shell">
+        <iframe src="/index.html" title="Hero — mobile"></iframe>
+      </div>
+    </figure>
+
+    <figure class="frame-tablet">
+      <figcaption>Tablet &mdash; 800 &times; 1100</figcaption>
+      <div class="frame-shell">
+        <iframe src="/index.html" title="Hero — tablet"></iframe>
+      </div>
+    </figure>
+
+    <figure class="frame-desk">
+      <figcaption>Desktop &mdash; 1440 &times; 900</figcaption>
+      <div class="frame-shell">
+        <iframe src="/index.html" title="Hero — desktop"></iframe>
+      </div>
+    </figure>
+
+  </div>
+
+  <a class="full" href="/index.html">Open homepage in full window &rarr;</a>
+</body>
+</html>

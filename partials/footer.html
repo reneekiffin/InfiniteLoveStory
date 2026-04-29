@@ -1,0 +1,67 @@
+<!-- partials/footer.html — global footer. Inject via <div data-include="/partials/footer.html"></div>. -->
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner container-large">
+
+    <div class="footer__brand-mark">
+      <!-- TODO: swap in /assets/svg/wax-seal-ils.svg in step 3 -->
+      <svg class="footer__seal" viewBox="0 0 96 96" aria-hidden="true">
+        <circle cx="48" cy="48" r="42" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+        <circle cx="48" cy="48" r="36" fill="none" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+        <text x="48" y="46" text-anchor="middle"
+              font-family="Cinzel, serif" font-size="14" letter-spacing="2" fill="currentColor">ILS</text>
+        <text x="48" y="62" text-anchor="middle"
+              font-family="Cormorant Garamond, serif" font-style="italic" font-size="9" fill="currentColor">est. 2025</text>
+      </svg>
+      <p class="footer__tagline">Capturing timeless moments of love &amp; commitment along Florida&rsquo;s 30A.</p>
+    </div>
+
+    <div>
+      <h2 class="footer__heading">Explore</h2>
+      <ul class="footer__list">
+        <li><a href="/pages/portfolio.html">Portfolio</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/packages.html">Packages &amp; Pricing</a></li>
+        <li><a href="/pages/print-album.html">Prints &amp; Albums</a></li>
+        <li><a href="/pages/blog.html">Journal</a></li>
+        <li><a href="/pages/wedding-guide.html">Wedding Guide</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__newsletter">
+      <h2 class="footer__heading">Love Letters</h2>
+      <p class="footer__list" style="opacity:0.85;margin-bottom:var(--space-sm)">
+        Quarterly notes on weddings, light, and the Gulf Coast.
+      </p>
+      <form
+        action="#"
+        method="post"
+        novalidate
+        data-newsletter
+        aria-label="Newsletter signup">
+        <label class="visually-hidden" for="footer-email">Email address</label>
+        <input id="footer-email" type="email" name="email" placeholder="your@email.com" required>
+        <button class="button is-secondary" type="submit" style="border-color:var(--blush);color:var(--blush)">Subscribe</button>
+      </form>
+      <!-- TODO: wire to Flodesk on integration pass. -->
+    </div>
+
+  </div>
+
+  <div class="footer__bottom container-large">
+    <p>&copy; <span data-year>2025</span> Infinite Love Story. A Shane Drummond Photo, CORP brand.</p>
+    <div class="footer__socials">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Pinterest">Pinterest</a>
+      <a href="#" aria-label="Email">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Inline tiny detail — current year — so the footer always shows the right copyright.
+  document.querySelectorAll("[data-year]").forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
+</script>

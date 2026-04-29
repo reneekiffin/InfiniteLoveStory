@@ -1,0 +1,63 @@
+<!-- partials/header.html — global navigation. Inject via <div data-include="/partials/header.html"></div>. -->
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" data-nav role="banner">
+  <div class="nav__inner container-large">
+    <a class="nav__logo" href="/" aria-label="Infinite Love Story home">
+      <span class="nav__logo-wordmark">Infinite Love Story</span>
+      <!-- TODO: replace Cinzel wordmark with Shane's actual logo file when delivered. -->
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a class="nav__link" data-nav-link="portfolio" href="/pages/portfolio.html">Portfolio</a>
+      <a class="nav__link" data-nav-link="about" href="/pages/about.html">About</a>
+      <a class="nav__link" data-nav-link="packages" href="/pages/packages.html">Packages</a>
+      <a class="nav__link" data-nav-link="blog" href="/pages/blog.html">Journal</a>
+      <a class="nav__link" data-nav-link="faq" href="/pages/faq.html">FAQ</a>
+    </nav>
+
+    <a class="button is-primary nav__cta-desktop" href="/pages/contact.html">Book Now</a>
+
+    <button
+      class="nav__toggle"
+      type="button"
+      data-nav-toggle
+      aria-expanded="false"
+      aria-controls="nav-overlay"
+      aria-label="Open menu">
+      <span class="nav__toggle-bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div
+  class="nav-overlay"
+  id="nav-overlay"
+  data-nav-overlay
+  aria-hidden="true"
+  aria-label="Mobile navigation">
+  <button
+    class="nav-overlay__close"
+    type="button"
+    data-nav-close
+    aria-label="Close menu"></button>
+
+  <nav class="nav-overlay__links" aria-label="Mobile primary">
+    <a class="nav-overlay__link" data-nav-link="portfolio" href="/pages/portfolio.html">Portfolio</a>
+    <a class="nav-overlay__link" data-nav-link="about" href="/pages/about.html">About</a>
+    <a class="nav-overlay__link" data-nav-link="packages" href="/pages/packages.html">Packages</a>
+    <a class="nav-overlay__link" data-nav-link="blog" href="/pages/blog.html">Journal</a>
+    <a class="nav-overlay__link" data-nav-link="faq" href="/pages/faq.html">FAQ</a>
+    <a class="nav-overlay__link" data-nav-link="contact" href="/pages/contact.html">Contact</a>
+  </nav>
+
+  <!-- TODO: swap in /assets/svg/botanical-sprig-1.svg in step 3 -->
+  <svg class="nav-overlay__decoration" viewBox="0 0 200 80" aria-hidden="true">
+    <path d="M10 60 Q 60 10 110 50 T 190 30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  </svg>
+</div>
+
+<aside class="mobile-cta" aria-label="Booking">
+  <a class="button is-primary" href="/pages/contact.html">Book Your Story</a>
+</aside>

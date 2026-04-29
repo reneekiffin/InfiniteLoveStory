@@ -1,0 +1,176 @@
+{
+  "_meta": {
+    "description": "Image manifest — every image slot the site reads from. Drop real exports into the matching folder following the filename pattern. Until then, /assets/images/_placeholders/<slot>.svg is shown via the image-fallback.js handler.",
+    "responsive_sizes": {
+      "mobile":  { "long_edge_px": 800,  "suffix": "-mobile" },
+      "tablet":  { "long_edge_px": 1400, "suffix": "-tablet" },
+      "desktop": { "long_edge_px": 2400, "suffix": "-desktop" }
+    },
+    "formats": ["webp", "jpg"],
+    "drop_folder": "/assets/images/_DROP_IMAGES_HERE/"
+  },
+
+  "slots": {
+
+    "hero-homepage": {
+      "folder": "heroes",
+      "filename": "hero-homepage",
+      "art_direction": {
+        "mobile":  { "aspect": "4:5",  "guidance": "Vertical crop. Couple positioned upper-right so headline fits bottom-left." },
+        "desktop": { "aspect": "16:9", "guidance": "Couple in lower third, room for headline overlay bottom-left, sky/sea behind." }
+      },
+      "description": "Couple in soft golden-hour light along 30A. Warm tones, room for headline overlay bottom-left. The defining brand image.",
+      "alt_suggestion": "Bride and groom share a quiet moment at golden hour on a 30A beach.",
+      "priority": "lcp",
+      "sizes": ["mobile", "tablet", "desktop"],
+      "formats": ["webp", "jpg"]
+    },
+
+    "hero-portfolio": {
+      "folder": "heroes",
+      "filename": "hero-portfolio",
+      "art_direction": {
+        "mobile":  { "aspect": "4:5", "guidance": "Single editorial portrait." },
+        "desktop": { "aspect": "21:9", "guidance": "Wide cinematic crop. Subject off-center." }
+      },
+      "description": "Cinematic editorial portrait that sets the tone for the portfolio hub.",
+      "sizes": ["mobile", "tablet", "desktop"],
+      "formats": ["webp", "jpg"]
+    },
+
+    "hero-about": {
+      "folder": "heroes",
+      "filename": "hero-about",
+      "description": "Shane behind the camera or candid working shot. Honest, warm, in-the-moment.",
+      "sizes": ["mobile", "tablet", "desktop"],
+      "formats": ["webp", "jpg"]
+    },
+
+    "homepage-feature-weddings": {
+      "folder": "weddings",
+      "filename": "feature-weddings",
+      "aspect": "4:5",
+      "description": "Bridal moment, ceremony or first-look, with movement and light.",
+      "sizes": ["mobile", "tablet", "desktop"],
+      "formats": ["webp", "jpg"]
+    },
+    "homepage-feature-engagements": {
+      "folder": "engagements",
+      "filename": "feature-engagements",
+      "aspect": "4:5",
+      "description": "Couple connection, golden hour outdoor session.",
+      "sizes": ["mobile", "tablet", "desktop"],
+      "formats": ["webp", "jpg"]
+    },
+    "homepage-feature-elopements": {
+      "folder": "elopements",
+      "filename": "feature-elopements",
+      "aspect": "4:5",
+      "description": "Intimate two-person elopement, private and quiet.",
+      "sizes": ["mobile", "tablet", "desktop"],
+      "formats": ["webp", "jpg"]
+    },
+    "homepage-feature-destination": {
+      "folder": "destination",
+      "filename": "feature-destination",
+      "aspect": "4:5",
+      "description": "Beach or destination wedding signature shot — turquoise water, white dress.",
+      "sizes": ["mobile", "tablet", "desktop"],
+      "formats": ["webp", "jpg"]
+    },
+
+    "homepage-story-1": {
+      "folder": "weddings",
+      "filename": "story-1",
+      "aspect": "3:2",
+      "description": "Storytelling row 1 image — paired with brand voice copy."
+    },
+    "homepage-story-2": {
+      "folder": "destination",
+      "filename": "story-2",
+      "aspect": "3:2",
+      "description": "Storytelling row 2 image — beach detail or candid moment."
+    },
+    "homepage-final-cta": {
+      "folder": "heroes",
+      "filename": "final-cta",
+      "aspect": "16:9",
+      "description": "Full-bleed closer — couple silhouette or wide environmental portrait."
+    },
+
+    "weddings-gallery": {
+      "folder": "weddings",
+      "filename_pattern": "wedding-{NN}",
+      "count_target": 24,
+      "aspects": ["mixed"],
+      "description": "Curated wedding portfolio. Mix of vertical and horizontal. Number sequentially."
+    },
+    "engagements-gallery": {
+      "folder": "engagements",
+      "filename_pattern": "engagement-{NN}",
+      "count_target": 18,
+      "aspects": ["mixed"],
+      "description": "Engagement and couples sessions."
+    },
+    "elopements-gallery": {
+      "folder": "elopements",
+      "filename_pattern": "elopement-{NN}",
+      "count_target": 12,
+      "aspects": ["mixed"],
+      "description": "Intimate elopements."
+    },
+    "destination-gallery": {
+      "folder": "destination",
+      "filename_pattern": "destination-{NN}",
+      "count_target": 16,
+      "aspects": ["mixed"],
+      "description": "Beach and destination weddings."
+    },
+
+    "about-portrait": {
+      "folder": "about",
+      "filename": "shane-portrait",
+      "aspect": "3:4",
+      "description": "Vertical portrait of Shane Drummond, used on About page split layout."
+    },
+    "about-bts-1": {
+      "folder": "about",
+      "filename": "bts-1",
+      "aspect": "3:2",
+      "description": "Behind-the-scenes — Shane shooting on location."
+    },
+
+    "package-essential": {
+      "folder": "packages",
+      "filename": "package-essential",
+      "aspect": "4:5",
+      "description": "Card thumbnail for the entry-level package."
+    },
+    "package-signature": {
+      "folder": "packages",
+      "filename": "package-signature",
+      "aspect": "4:5",
+      "description": "Card thumbnail for the mid-tier package."
+    },
+    "package-heirloom": {
+      "folder": "packages",
+      "filename": "package-heirloom",
+      "aspect": "4:5",
+      "description": "Card thumbnail for the premium package, including album."
+    },
+
+    "lead-magnet-cover": {
+      "folder": "lead-magnet",
+      "filename": "wedding-guide-mockup",
+      "aspect": "3:4",
+      "description": "Tilted PDF preview mockup of the Wedding Planning Guide."
+    },
+
+    "blog-cover-default": {
+      "folder": "blog",
+      "filename": "cover-default",
+      "aspect": "16:9",
+      "description": "Default blog cover used when a post lacks its own image."
+    }
+  }
+}

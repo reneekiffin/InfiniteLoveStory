@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Infinite Love Story — Florida Panhandle Wedding Photography</title>
+  <meta name="description" content="Editorial wedding and elopement photography along Florida's 30A and Panama City Beach. Capturing timeless moments of love and commitment.">
+  <link rel="canonical" href="https://infinitelovestory.com/">
+  <meta property="og:title" content="Infinite Love Story — Florida Panhandle Wedding Photography">
+  <meta property="og:description" content="Editorial wedding and elopement photography along Florida's 30A and Panama City Beach.">
+  <meta property="og:url" content="https://infinitelovestory.com/">
+
+  <!-- Shared meta + stylesheets + fonts. -->
+  <div data-include="/partials/meta.html"></div>
+</head>
+
+<body class="has-hero" data-page="home" data-nav-style="transparent">
+
+  <div class="page-wrapper">
+
+    <!-- Header injected from /partials/header.html -->
+    <div data-include="/partials/header.html"></div>
+
+    <main id="main">
+
+      <!-- ============================================================
+           Section: Homepage Hero
+           Step-1 deliverable. Responsive at 320 / 768 / 1280+.
+           ============================================================ -->
+      <section class="section_hero" aria-label="Welcome">
+
+        <div class="hero__media">
+          <picture>
+            <!-- Mobile: vertical 4:5 art-direction -->
+            <source
+              media="(max-width: 767px)"
+              type="image/webp"
+              srcset="/assets/images/heroes/hero-homepage-mobile.webp 800w,
+                      /assets/images/heroes/hero-homepage-tablet.webp 1400w"
+              sizes="100vw">
+            <source
+              media="(max-width: 767px)"
+              srcset="/assets/images/heroes/hero-homepage-mobile.jpg 800w,
+                      /assets/images/heroes/hero-homepage-tablet.jpg 1400w"
+              sizes="100vw">
+
+            <!-- Tablet & desktop: 16:9 -->
+            <source
+              type="image/webp"
+              srcset="/assets/images/heroes/hero-homepage-tablet.webp 1400w,
+                      /assets/images/heroes/hero-homepage-desktop.webp 2400w"
+              sizes="(max-width: 1279px) 100vw, 100vw">
+
+            <img
+              src="/assets/images/heroes/hero-homepage-desktop.jpg"
+              srcset="/assets/images/heroes/hero-homepage-mobile.jpg 800w,
+                      /assets/images/heroes/hero-homepage-tablet.jpg 1400w,
+                      /assets/images/heroes/hero-homepage-desktop.jpg 2400w"
+              sizes="100vw"
+              data-slot="hero-homepage"
+              alt="A couple shares a quiet moment at golden hour on a 30A beach."
+              fetchpriority="high"
+              decoding="async"
+              width="2400"
+              height="1350">
+          </picture>
+        </div>
+
+        <div class="hero__content container-large">
+          <span class="text-style-eyebrow hero__eyebrow">Florida Panhandle &middot; 30A &middot; Destination</span>
+
+          <h1 class="hero__headline">
+            Capturing timeless moments of love
+            <span class="hero__headline-script">&amp; always</span>
+            <br>commitment.
+          </h1>
+
+          <p class="hero__sub">
+            Editorial wedding photography for couples who want their story told slowly,
+            warmly, and like a poem you keep returning to.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button is-primary is-large" href="/pages/contact.html">Book your story</a>
+            <a class="button is-text" href="/pages/portfolio.html">View the portfolio &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Scroll indicator (desktop only). Hand-drawn arrow placeholder until step 3 SVG library lands. -->
+        <svg class="hero__scroll-indicator" viewBox="0 0 64 96" aria-hidden="true">
+          <path d="M32 8 V 78" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <path d="M22 66 Q 32 84, 42 66" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          <text x="32" y="94" text-anchor="middle"
+                font-family="Cinzel, serif" font-size="7" letter-spacing="2"
+                fill="currentColor">SCROLL</text>
+        </svg>
+      </section>
+
+      <!-- Subsequent homepage sections (intro, featured galleries, story rows,
+           testimonial carousel, packages teaser, lead magnet, instagram, final CTA)
+           are scoped to step 2 in the build order. -->
+
+    </main>
+
+    <!-- Footer injected from /partials/footer.html -->
+    <div data-include="/partials/footer.html"></div>
+
+  </div>
+
+  <!-- Scripts: include first so partials inject before nav.js binds. -->
+  <script src="/assets/js/include.js" defer></script>
+  <script src="/assets/js/nav.js" defer></script>
+  <script src="/assets/js/image-fallback.js" defer></script>
+  <script src="/assets/js/data-loader.js" defer></script>
+</body>
+</html>

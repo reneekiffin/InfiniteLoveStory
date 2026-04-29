@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local server / log files
+*.log
+
+# Image working files (raw masters not yet sorted)
+# Tracked separately by the workflow — drop folder is intentionally tracked,
+# but skip any large psd/cr2/dng a photographer might accidentally drop in.
+*.psd
+*.cr2
+*.cr3
+*.dng
+*.arw
+*.nef
+*.raf

@@ -1,0 +1,173 @@
+/* ==========================================================================
+   layout.css — Page wrapper, containers, grids, section padding helpers.
+   Class names follow Finsweet Client-First conventions for clean Webflow port.
+   ========================================================================== */
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  /* Reserve space for the persistent mobile CTA so content never sits under it. */
+  padding-bottom: var(--mobile-cta-height);
+}
+
+@media (min-width: 1024px) {
+  .page-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* ---------- Containers ----------------------------------------------- */
+
+.container-large,
+.container-medium,
+.container-small {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.container-large { max-width: var(--container-large); }
+.container-medium { max-width: var(--container-medium); }
+.container-small { max-width: var(--container-small); }
+
+@media (min-width: 768px) {
+  .container-large,
+  .container-medium,
+  .container-small {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-large { width: 100%; }
+}
+
+/* ---------- Section padding ------------------------------------------ */
+
+.padding-section-small  { padding-block: var(--section-pad-sm); }
+.padding-section-medium { padding-block: var(--section-pad-md); }
+.padding-section-large  { padding-block: var(--section-pad-lg); }
+
+.padding-top-medium { padding-top: var(--section-pad-md); }
+.padding-bottom-medium { padding-bottom: var(--section-pad-md); }
+.padding-top-large { padding-top: var(--section-pad-lg); }
+.padding-bottom-large { padding-bottom: var(--section-pad-lg); }
+
+/* ---------- Grids ---------------------------------------------------- */
+
+.grid_2-col,
+.grid_3-col,
+.grid_4-col {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid_2-col { grid-template-columns: 1fr; }
+.grid_3-col { grid-template-columns: 1fr; }
+.grid_4-col { grid-template-columns: 1fr; }
+
+@media (min-width: 768px) {
+  .grid_2-col { grid-template-columns: repeat(2, 1fr); gap: var(--space-xl); }
+  .grid_3-col { grid-template-columns: repeat(2, 1fr); }
+  .grid_4-col { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .grid_3-col { grid-template-columns: repeat(3, 1fr); gap: var(--space-xl); }
+  .grid_4-col { grid-template-columns: repeat(4, 1fr); gap: var(--space-lg); }
+}
+
+/* Asymmetric staggered grid — used for featured galleries on homepage. */
+.grid_asymmetric {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid_asymmetric {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid_asymmetric {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 1fr;
+    gap: var(--space-xl);
+  }
+  .grid_asymmetric > *:nth-child(1) { grid-column: 1 / span 7; }
+  .grid_asymmetric > *:nth-child(2) { grid-column: 8 / span 5; transform: translateY(var(--space-2xl)); }
+  .grid_asymmetric > *:nth-child(3) { grid-column: 1 / span 5; }
+  .grid_asymmetric > *:nth-child(4) { grid-column: 6 / span 7; transform: translateY(calc(-1 * var(--space-2xl))); }
+}
+
+/* ---------- Spacing helpers ------------------------------------------ */
+
+.spacer-2xs { height: var(--space-2xs); }
+.spacer-xs  { height: var(--space-xs); }
+.spacer-sm  { height: var(--space-sm); }
+.spacer-md  { height: var(--space-md); }
+.spacer-lg  { height: var(--space-lg); }
+.spacer-xl  { height: var(--space-xl); }
+.spacer-2xl { height: var(--space-2xl); }
+
+/* ---------- Visibility helpers --------------------------------------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hide-mobile { display: none; }
+@media (min-width: 768px)  { .hide-mobile { display: initial; } .show-mobile { display: none; } }
+.hide-tablet-up { display: initial; }
+@media (min-width: 768px)  { .hide-tablet-up { display: none; } }
+.hide-desktop-up { display: initial; }
+@media (min-width: 1024px) { .hide-desktop-up { display: none; } }
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: var(--space-sm);
+  background: var(--ink);
+  color: var(--paper);
+  padding: var(--space-2xs) var(--space-sm);
+  z-index: var(--z-modal);
+  transition: top var(--dur-fast) var(--ease-out);
+}
+.skip-link:focus { top: var(--space-sm); }
+
+/* Image container with locked aspect ratio — prevents layout shift. */
+.image-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--cream);
+}
+.image-frame > img,
+.image-frame > picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: var(--photo-filter);
+}
+
+.image-frame.is-portrait { aspect-ratio: 4 / 5; }
+.image-frame.is-square   { aspect-ratio: 1 / 1; }
+.image-frame.is-landscape { aspect-ratio: 3 / 2; }
+.image-frame.is-cinema   { aspect-ratio: 16 / 9; }
