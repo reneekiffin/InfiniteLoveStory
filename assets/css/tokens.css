@@ -19,6 +19,9 @@
   --surface-alt: var(--cream);
 
   /* ---------- Type ----------------------------------------------------- */
+  /* Wordmark stands in for Shane's final logo file. Italiana = high-contrast
+     fashion-magazine serif, used only for the brand wordmark in nav + footer. */
+  --font-wordmark: "Italiana", "Didot", "Times New Roman", serif;
   --font-display: "Cinzel", "Times New Roman", serif;
   --font-heading: "Cormorant Garamond", "Times New Roman", serif;
   --font-body: "Libre Franklin", system-ui, -apple-system, "Helvetica Neue", sans-serif;
