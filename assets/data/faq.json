@@ -1,0 +1,89 @@
+{
+  "intro": "Most of our couples come from out of town. We wrote these for the destination bride who is planning a 30A wedding from afar.",
+  "categories": [
+    {
+      "id": "planning",
+      "label": "Planning from afar",
+      "items": [
+        {
+          "q": "We're planning our wedding from another state. Can we book without meeting in person first?",
+          "a": "Absolutely — most of our couples do. We start with a video call, walk you through the collections, and follow up with a sample contract. Once you're ready we hold the date with a 25% deposit. Florida residency is not required."
+        },
+        {
+          "q": "How do we choose a venue along 30A?",
+          "a": "Our Wedding Planning Guide has a curated list of beachfront and inland venues by guest count, vibe, and price range. Once you have a shortlist we're happy to share photographs from each so you can see them in your own light."
+        },
+        {
+          "q": "Do you have planners and vendors you recommend?",
+          "a": "Yes. We work alongside a small list of trusted planners, florists, calligraphers, and DJs along the Panhandle. Send us a note and we'll share names that suit your aesthetic and budget."
+        },
+        {
+          "q": "How far in advance should we book?",
+          "a": "Peak season for 30A weddings is March through October. We typically book nine to twelve months ahead, occasionally further out for holiday weekends."
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "label": "Day-of logistics",
+      "items": [
+        {
+          "q": "How long does coverage usually run?",
+          "a": "Most weddings need eight to ten hours, beginning at the back-end of getting-ready through the first hour of the reception. Our Signature collection covers nine hours, which is the sweet spot for the majority of weddings."
+        },
+        {
+          "q": "What if it rains?",
+          "a": "It happens. We always build a weather backup into your timeline and bring covered-light gear. Storms along the Gulf often pass quickly and the sky after a storm is one of our favorite skies to shoot in."
+        },
+        {
+          "q": "Do you travel beyond Florida?",
+          "a": "Yes. Travel within the Panhandle is included. Anywhere else, we quote travel separately on a per-event basis."
+        },
+        {
+          "q": "Will there be a second photographer?",
+          "a": "Our Signature and Heirloom collections include two photographers. The Essential collection is single-photographer; you can add a second for $850."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "label": "Galleries & albums",
+      "items": [
+        {
+          "q": "When will we see our photographs?",
+          "a": "A sneak-peek of 30 to 60 images lands in your inbox within 24 to 48 hours. The full gallery is delivered within six weeks for elopements and eight weeks for full weddings."
+        },
+        {
+          "q": "What does the gallery look like?",
+          "a": "A private, password-protected online gallery you can browse on any device. You can favorite images, share with family, and download high-resolution files for personal use."
+        },
+        {
+          "q": "Do you offer prints and albums?",
+          "a": "Yes — we partner with a small US print lab and an Italian bookbinder. The Heirloom collection includes a hand-bound album. All other couples have access to our print store at delivery."
+        },
+        {
+          "q": "What's an heirloom album, exactly?",
+          "a": "A hand-bound book on archival paper, with thirty spreads designed by us and approved by you. It is built to outlive the laptop you'll forget the password to."
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "label": "Pricing & contracts",
+      "items": [
+        {
+          "q": "How does the deposit work?",
+          "a": "A 25% deposit holds your date. The balance is split into two installments — half ninety days before the wedding, the remainder two weeks before."
+        },
+        {
+          "q": "Do you offer payment plans?",
+          "a": "We can split the balance over more installments on request. Just ask."
+        },
+        {
+          "q": "What is your refund or rescheduling policy?",
+          "a": "Deposits are non-refundable but transferable to a new date within twelve months, subject to availability. Full details are in the contract."
+        }
+      ]
+    }
+  ]
+}

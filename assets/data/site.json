@@ -13,9 +13,16 @@
     "honeybook_smart_file_embed": ""
   },
   "social": {
-    "instagram": "https://instagram.com/infinitelovestory",
-    "pinterest": "https://pinterest.com/infinitelovestory",
+    "instagram": "https://www.instagram.com/infinitelove.story",
+    "instagram_handle": "@infinitelove.story",
+    "pinterest": "",
     "tiktok": ""
+  },
+  "pixieset": {
+    "collection_url": "https://shanedrummondphoto.pixieset.com/",
+    "embed_html": "",
+    "showcase_label": "Browse full collections on Pixieset",
+    "notes": "Paste the Pixieset embed snippet (iframe or <div data-pixieset>) into embed_html and the portfolio page will render it. If left empty, the portfolio falls back to a button linking out to collection_url."
   },
   "navigation": {
     "primary": [

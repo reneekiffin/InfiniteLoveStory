@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SVG motif library — Infinite Love Story</title>
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/typography.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <style>
+    body { padding: var(--section-pad-md) 0; }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-2xl);
+    }
+    @media (min-width: 768px)  { .preview-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1280px) { .preview-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+    .swatch {
+      border: 1px solid var(--line);
+      padding: var(--space-lg);
+      background: var(--paper);
+    }
+    .swatch__title {
+      font-family: var(--font-display);
+      font-size: var(--fs-eyebrow);
+      letter-spacing: var(--ls-eyebrow);
+      text-transform: uppercase;
+      color: var(--gilt);
+      margin-bottom: var(--space-xs);
+    }
+    .swatch__sub {
+      font-family: var(--font-heading);
+      font-style: italic;
+      color: var(--mute);
+      margin-bottom: var(--space-md);
+      font-size: 0.95rem;
+    }
+    .swatch__rows {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: var(--space-md);
+      align-items: center;
+      padding: var(--space-md) 0;
+      border-top: 1px solid var(--line);
+    }
+    .swatch__rows > .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80px;
+      color: var(--ink);
+    }
+    .swatch__rows > .item.gilt { color: var(--gilt); }
+    .swatch__rows > .item.cream-bg { background: var(--cream); padding: var(--space-sm); }
+    .swatch__rows > .item.dark-bg  { background: var(--ink); color: var(--blush); padding: var(--space-sm); }
+    .item img { display: block; }
+    .item.is-sm img { width: 32px; }
+    .item.is-md img { width: 64px; }
+    .item.is-lg img { width: 128px; }
+  </style>
+</head>
+<body>
+  <div class="container-large">
+    <p class="text-style-eyebrow">Step 3</p>
+    <h1 class="text-style-italic" style="margin-bottom:var(--space-sm)">Romantic &amp; whimsical motif library</h1>
+    <p style="max-width:60ch;margin-bottom:var(--space-2xl);color:var(--mute)">
+      Each motif is a single SVG using <code>currentColor</code>, so it picks up
+      the surrounding text color via CSS. Stroke widths sit between 1.0 and
+      1.4&nbsp;px — readable at small sizes, never bossy at large ones.
+    </p>
+
+    <div class="preview-grid">
+      <article class="swatch">
+        <p class="swatch__title">Botanical sprig 1</p>
+        <p class="swatch__sub">Olive branch — section dividers, flanking H1s.</p>
+        <div class="swatch__rows">
+          <div class="item is-sm"><img src="/assets/svg/botanical-sprig-1.svg" alt=""></div>
+          <div class="item is-md gilt"><img src="/assets/svg/botanical-sprig-1.svg" alt=""></div>
+          <div class="item is-lg dark-bg"><img src="/assets/svg/botanical-sprig-1.svg" alt=""></div>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <p class="swatch__title">Botanical sprig 2</p>
+        <p class="swatch__sub">Eucalyptus — vertical column accents.</p>
+        <div class="swatch__rows">
+          <div class="item is-sm"><img src="/assets/svg/botanical-sprig-2.svg" alt="" style="width:24px"></div>
+          <div class="item is-md gilt"><img src="/assets/svg/botanical-sprig-2.svg" alt="" style="width:48px"></div>
+          <div class="item is-lg dark-bg"><img src="/assets/svg/botanical-sprig-2.svg" alt="" style="width:96px"></div>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <p class="swatch__title">Crescent moon</p>
+        <p class="swatch__sub">Behind testimonials and the lead magnet.</p>
+        <div class="swatch__rows">
+          <div class="item is-sm"><img src="/assets/svg/crescent-moon.svg" alt=""></div>
+          <div class="item is-md gilt"><img src="/assets/svg/crescent-moon.svg" alt=""></div>
+          <div class="item is-lg dark-bg"><img src="/assets/svg/crescent-moon.svg" alt=""></div>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <p class="swatch__title">Sparkle</p>
+        <p class="swatch__sub">Small flourishes near eyebrows and CTAs.</p>
+        <div class="swatch__rows">
+          <div class="item is-sm"><img src="/assets/svg/sparkle.svg" alt="" style="width:16px"></div>
+          <div class="item is-md gilt"><img src="/assets/svg/sparkle.svg" alt="" style="width:32px"></div>
+          <div class="item is-lg dark-bg"><img src="/assets/svg/sparkle.svg" alt="" style="width:64px"></div>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <p class="swatch__title">Heart line</p>
+        <p class="swatch__sub">Bullet markers in packages list, favicon source.</p>
+        <div class="swatch__rows">
+          <div class="item is-sm"><img src="/assets/svg/heart-line.svg" alt="" style="width:18px"></div>
+          <div class="item is-md gilt"><img src="/assets/svg/heart-line.svg" alt=""></div>
+          <div class="item is-lg dark-bg"><img src="/assets/svg/heart-line.svg" alt=""></div>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <p class="swatch__title">Hand-drawn arrow</p>
+        <p class="swatch__sub">Pointing to Book Now in homepage hero and final CTA.</p>
+        <div class="swatch__rows">
+          <div class="item is-md"><img src="/assets/svg/arrow-hand-drawn.svg" alt="" style="width:80px"></div>
+          <div class="item is-lg gilt"><img src="/assets/svg/arrow-hand-drawn.svg" alt="" style="width:140px"></div>
+          <div class="item is-lg dark-bg"><img src="/assets/svg/arrow-hand-drawn.svg" alt="" style="width:160px"></div>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <p class="swatch__title">Frame corner</p>
+        <p class="swatch__sub">Top-left corner; rotate for other three. Used on featured image blocks.</p>
+        <div class="swatch__rows">
+          <div class="item is-sm"><img src="/assets/svg/frame-corner.svg" alt=""></div>
+          <div class="item is-md gilt"><img src="/assets/svg/frame-corner.svg" alt=""></div>
+          <div class="item is-lg dark-bg"><img src="/assets/svg/frame-corner.svg" alt=""></div>
+        </div>
+      </article>
+
+      <article class="swatch">
+        <p class="swatch__title">Wax seal — ILS</p>
+        <p class="swatch__sub">Footer brand mark with monogram and est. 2025.</p>
+        <div class="swatch__rows">
+          <div class="item is-md"><img src="/assets/svg/wax-seal-ils.svg" alt="" style="width:64px"></div>
+          <div class="item is-lg gilt"><img src="/assets/svg/wax-seal-ils.svg" alt="" style="width:120px"></div>
+          <div class="item is-lg dark-bg"><img src="/assets/svg/wax-seal-ils.svg" alt="" style="width:160px"></div>
+        </div>
+      </article>
+    </div>
+
+    <p style="margin-top:var(--space-2xl);font-size:0.9rem;color:var(--mute)">
+      Hosted at <code>/assets/svg/&lt;name&gt;.svg</code>. Reference via
+      <code>&lt;img src="/assets/svg/heart-line.svg" alt=""&gt;</code> for
+      decorative use, or paste inline if you need to recolor on hover.
+    </p>
+  </div>
+</body>
+</html>

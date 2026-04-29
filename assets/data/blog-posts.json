@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "slug": "ella-marcus-alys-beach",
+      "title": "Ella & Marcus — A Quiet Wedding at Alys Beach",
+      "excerpt": "A small ceremony with thirty guests, white linen, and a sky that softened just in time for the vows.",
+      "date": "2024-10-18",
+      "tags": ["weddings", "30A", "alys-beach"],
+      "cover_slot": "blog-cover-default",
+      "read_time_min": 7
+    },
+    {
+      "slug": "planning-30a-destination-wedding",
+      "title": "Planning a 30A Destination Wedding from Out of State",
+      "excerpt": "Eleven things to know before you sign with a venue — from the calendar to the hurricane insurance line item.",
+      "date": "2024-09-02",
+      "tags": ["planning", "guides", "destination"],
+      "cover_slot": "blog-cover-default",
+      "read_time_min": 9
+    },
+    {
+      "slug": "noor-james-watercolor",
+      "title": "Noor & James — Watercolor Beach Vows",
+      "excerpt": "A two-photographer day from a slow morning brunch to first-dance fireflies.",
+      "date": "2024-05-12",
+      "tags": ["weddings", "watercolor", "30A"],
+      "cover_slot": "blog-cover-default",
+      "read_time_min": 6
+    },
+    {
+      "slug": "elopement-vs-micro-wedding",
+      "title": "Elopement, Micro-Wedding, or Small Wedding — Which Are You?",
+      "excerpt": "We talk you through the practical and emotional differences so you can pick the wedding you actually want.",
+      "date": "2024-04-08",
+      "tags": ["guides", "elopements"],
+      "cover_slot": "blog-cover-default",
+      "read_time_min": 8
+    },
+    {
+      "slug": "what-to-wear-engagement-shoot",
+      "title": "What to Wear to Your Engagement Session on the Gulf",
+      "excerpt": "Linen, neutrals, and one secret weapon for windy evenings on the dunes.",
+      "date": "2024-02-19",
+      "tags": ["guides", "engagements"],
+      "cover_slot": "blog-cover-default",
+      "read_time_min": 5
+    },
+    {
+      "slug": "first-look-or-not",
+      "title": "First Look or No First Look — A Photographer's Honest Take",
+      "excerpt": "There is no wrong answer. Here is the trade-off in plain terms, with examples from real weddings.",
+      "date": "2024-01-15",
+      "tags": ["planning", "guides"],
+      "cover_slot": "blog-cover-default",
+      "read_time_min": 4
+    }
+  ]
+}

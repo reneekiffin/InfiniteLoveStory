@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none" stroke="currentColor"
+     stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Olive sprig — single curving stem with paired leaves of varied size. -->
+  <path d="M6 40 Q 60 22 110 38 T 196 36"/>
+  <!-- left-side leaves -->
+  <path d="M30 36 Q 26 24 36 22 Q 46 24 42 34 Q 36 39 30 36 Z"/>
+  <path d="M52 44 Q 44 56 54 60 Q 64 58 60 48 Q 56 42 52 44 Z"/>
+  <path d="M76 33 Q 70 22 80 18 Q 90 22 86 32 Q 80 36 76 33 Z"/>
+  <!-- right-side leaves -->
+  <path d="M104 41 Q 98 53 108 56 Q 118 53 114 44 Q 110 40 104 41 Z"/>
+  <path d="M130 35 Q 124 22 136 20 Q 146 24 140 34 Q 134 38 130 35 Z"/>
+  <path d="M156 38 Q 150 50 160 53 Q 170 50 166 41 Q 162 37 156 38 Z"/>
+  <path d="M180 35 Q 176 24 186 22 Q 194 26 190 34 Q 186 38 180 35 Z"/>
+  <!-- small olive berries -->
+  <circle cx="68" cy="36" r="1.6"/>
+  <circle cx="120" cy="38" r="1.4"/>
+  <circle cx="170" cy="34" r="1.4"/>
+</svg>

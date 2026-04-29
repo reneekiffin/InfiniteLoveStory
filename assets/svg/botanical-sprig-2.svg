@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" fill="none" stroke="currentColor"
+     stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Eucalyptus — tall stem with rounded paired leaves. -->
+  <path d="M100 116 Q 96 88 100 60 Q 104 32 96 6"/>
+  <!-- paired leaves down the stem -->
+  <ellipse cx="84"  cy="100" rx="11" ry="6" transform="rotate(-22 84 100)"/>
+  <ellipse cx="116" cy="100" rx="11" ry="6" transform="rotate(22 116 100)"/>
+  <ellipse cx="80"  cy="80"  rx="13" ry="7" transform="rotate(-18 80 80)"/>
+  <ellipse cx="120" cy="80"  rx="13" ry="7" transform="rotate(18 120 80)"/>
+  <ellipse cx="78"  cy="58"  rx="14" ry="7" transform="rotate(-15 78 58)"/>
+  <ellipse cx="122" cy="58"  rx="14" ry="7" transform="rotate(15 122 58)"/>
+  <ellipse cx="82"  cy="36"  rx="12" ry="6" transform="rotate(-20 82 36)"/>
+  <ellipse cx="118" cy="36"  rx="12" ry="6" transform="rotate(20 118 36)"/>
+  <ellipse cx="92"  cy="14"  rx="9"  ry="5" transform="rotate(-30 92 14)"/>
+</svg>

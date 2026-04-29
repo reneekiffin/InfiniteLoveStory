@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+     stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Thin crescent — outer arc only, no fill. -->
+  <path d="M44 10 A 26 26 0 1 0 44 54 A 20 20 0 1 1 44 10 Z"/>
+</svg>

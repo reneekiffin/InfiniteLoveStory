@@ -1,0 +1,86 @@
+{
+  "currency": "USD",
+  "deposit_pct": 25,
+  "intro": "Three ways to be photographed. Every collection includes pre-wedding consultation, a custom timeline, online gallery, and personal-use print rights.",
+  "tiers": [
+    {
+      "id": "essential",
+      "name": "Essential",
+      "tagline": "For couples saying yes simply.",
+      "price_from": 4200,
+      "hours": 6,
+      "image_slot": "package-essential",
+      "best_for": "Intimate ceremonies, courthouse weddings, micro-weddings of 30 or fewer guests.",
+      "included": [
+        "Six hours of coverage on the wedding day",
+        "One photographer",
+        "Pre-wedding planning call",
+        "Custom shooting timeline",
+        "400+ edited high-resolution images",
+        "Online gallery for sharing and downloading",
+        "Personal-use print rights"
+      ],
+      "addons": [
+        "Engagement session — $650",
+        "Second photographer — $850",
+        "Rehearsal-dinner coverage — $750"
+      ]
+    },
+    {
+      "id": "signature",
+      "name": "Signature",
+      "tagline": "Our most-loved collection.",
+      "price_from": 6800,
+      "hours": 9,
+      "image_slot": "package-signature",
+      "featured": true,
+      "best_for": "Full wedding days from getting-ready to first-dance, 60–150 guests.",
+      "included": [
+        "Nine hours of coverage on the wedding day",
+        "Two photographers",
+        "Engagement session along 30A or your choice of Florida coast",
+        "Pre-wedding planning calls and venue walkthrough",
+        "Custom shooting timeline and shot list",
+        "700+ edited high-resolution images",
+        "Sneak-peek delivery within 48 hours",
+        "Online gallery + personal-use print rights",
+        "Curated print-store with archival paper options"
+      ],
+      "addons": [
+        "Heirloom album upgrade — from $1,200",
+        "Rehearsal-dinner coverage — $750",
+        "Welcome-party coverage — $950",
+        "Same-day teaser reel — $400"
+      ]
+    },
+    {
+      "id": "heirloom",
+      "name": "Heirloom",
+      "tagline": "The complete love story.",
+      "price_from": 9800,
+      "hours": 12,
+      "image_slot": "package-heirloom",
+      "best_for": "Multi-day celebrations, destination weekends, and couples who want every chapter held in print.",
+      "included": [
+        "Twelve hours of coverage on the wedding day",
+        "Two photographers",
+        "Engagement session anywhere along the Gulf",
+        "Bridal portraits or rehearsal-dinner coverage",
+        "Pre-wedding planning calls + venue walkthrough",
+        "1,000+ edited high-resolution images",
+        "Sneak-peek delivery within 24 hours",
+        "10×10 inch Italian-bound heirloom album, 30 spreads",
+        "Two parent albums, 6×6 inch",
+        "Online gallery + personal-use print rights",
+        "Same-day teaser reel"
+      ],
+      "addons": [
+        "Album upgrade — leather, silk, linen options",
+        "Welcome-party coverage — $950",
+        "Brunch coverage — $650",
+        "Travel beyond Florida — quoted on request"
+      ]
+    }
+  ],
+  "footnote": "Travel within the Florida Panhandle is included. Destination weddings outside Florida are quoted separately and require a 50% deposit."
+}

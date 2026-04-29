@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "ella-marcus",
+      "couple": "Ella & Marcus",
+      "wedding_date": "2024-10-12",
+      "venue": "Alys Beach, FL",
+      "quote": "Shane has the rare gift of disappearing and reappearing at exactly the right moments. We didn't pose for him — we lived our day, and he gathered the small, true things. Looking through the gallery felt like reading our own love letter.",
+      "image_slot": "weddings-gallery-item"
+    },
+    {
+      "id": "noor-james",
+      "couple": "Noor & James",
+      "wedding_date": "2024-05-04",
+      "venue": "Watercolor, 30A",
+      "quote": "We told Shane we wanted images that would still feel right in twenty years. He delivered photographs that already feel like memory. Quiet, warm, almost film-like. Our parents wept when we showed them the album.",
+      "image_slot": "destination-gallery-item"
+    },
+    {
+      "id": "priya-sam",
+      "couple": "Priya & Sam",
+      "wedding_date": "2023-11-18",
+      "venue": "Rosemary Beach, FL",
+      "quote": "Calm under pressure, kind to every relative, and somehow every photograph holds a feeling. Shane caught a single look between my dad and me that I would otherwise have lost. That image alone is worth everything.",
+      "image_slot": "engagements-gallery-item"
+    },
+    {
+      "id": "hannah-rob",
+      "couple": "Hannah & Rob",
+      "wedding_date": "2024-06-22",
+      "venue": "Seaside, FL",
+      "quote": "Booking Shane was the single best decision we made for our wedding. He felt like a friend by the morning — present, unhurried, with an eye that finds beauty in the unscripted middle of the day.",
+      "image_slot": "elopements-gallery-item"
+    },
+    {
+      "id": "amelia-david",
+      "couple": "Amelia & David",
+      "wedding_date": "2023-09-30",
+      "venue": "Panama City Beach, FL",
+      "quote": "Our elopement was just the two of us, the Gulf, and Shane. The photographs feel like a private film made for us. We have framed three above our bed.",
+      "image_slot": "elopements-gallery-item"
+    }
+  ]
+}
