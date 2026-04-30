@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="../">
+  <title>Journal — Infinite Love Story</title>
+  <meta name="description" content="A wedding story from Infinite Love Story.">
+  <div data-include="partials/meta.html"></div>
+</head>
+
+<body data-page="blog">
+  <div class="page-wrapper">
+    <div data-include="partials/header.html"></div>
+
+    <main id="main">
+
+      <article class="container-medium padding-section-large blog-post" data-blog-post>
+        <p class="blog-post__meta" data-blog-meta>Loading&hellip;</p>
+        <h1 class="blog-post__title" data-blog-title>&nbsp;</h1>
+
+        <div class="blog-post__hero">
+          <div class="image-frame">
+            <img data-blog-cover src="" data-slot="blog-cover-default" alt="" loading="eager">
+          </div>
+        </div>
+
+        <div class="blog-post__body" data-blog-body>
+          <p>
+            <em>Loading the story&hellip; if this stays for more than a moment, the slug in the URL probably doesn't match a post in <code>blog-posts.json</code>.</em>
+          </p>
+        </div>
+
+        <hr style="border:0;border-top:1px solid var(--line);margin-block:var(--space-3xl)">
+
+        <p class="text-align-center">
+          <a class="button is-secondary" href="pages/blog.html">&larr; Back to journal</a>
+        </p>
+      </article>
+
+      <section class="padding-section-medium" style="background:var(--cream)">
+        <div class="container-medium text-align-center">
+          <p class="text-style-eyebrow">Liked this story?</p>
+          <h2 class="text-style-italic" style="font-weight:300;margin-top:var(--space-xs)">Maybe yours is next.</h2>
+          <a class="button is-primary" href="pages/contact.html" style="margin-top:var(--space-md)">Tell us about your day</a>
+        </div>
+      </section>
+
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+  </div>
+
+  <script src="assets/js/include.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/image-fallback.js" defer></script>
+  <script src="assets/js/data-loader.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+  <script>
+    // Tiny inline blog-post resolver — reads ?slug= from the URL, finds the
+    // matching post in blog-posts.json, and renders title/meta/cover.
+    document.addEventListener("partials:loaded", function () {
+      var slug = new URLSearchParams(window.location.search).get("slug");
+      if (!window.ILS || !window.ILS.data) return;
+      window.ILS.data.load("blog-posts").then(function (data) {
+        var posts = (data && data.posts) || [];
+        var post = posts.find(function (p) { return p.slug === slug; }) || posts[0];
+        if (!post) return;
+
+        document.title = post.title + " — Infinite Love Story";
+        document.querySelector("[data-blog-title]").textContent = post.title;
+
+        var d = new Date(post.date);
+        var dateStr = isNaN(d) ? "" : d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+        document.querySelector("[data-blog-meta]").textContent =
+          dateStr + (post.read_time_min ? "  •  " + post.read_time_min + " min read" : "");
+
+        var cover = document.querySelector("[data-blog-cover]");
+        cover.src = "assets/images/blog/" + post.slug + "-desktop.jpg";
+        cover.alt = post.title;
+        cover.dataset.slot = post.cover_slot || "blog-cover-default";
+
+        // Body — replace the loading copy with the post excerpt as a placeholder
+        // for the actual full-content. Real posts can paste in HTML or
+        // we can wire to a markdown loader later.
+        document.querySelector("[data-blog-body]").innerHTML =
+          '<p>' + escapeHtml(post.excerpt) + '</p>' +
+          '<p><em>Full post coming soon. Tags: ' +
+            (post.tags || []).map(escapeHtml).join(", ") +
+          '</em></p>';
+      });
+    });
+    function escapeHtml(s){return String(s||"").replace(/[&<>"']/g,function(m){return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[m];});}
+  </script>
+</body>
+</html>
