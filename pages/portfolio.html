@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="../">
+  <title>Portfolio — Infinite Love Story</title>
+  <meta name="description" content="A curated portfolio of weddings, elopements, engagements, and destination sessions photographed by Infinite Love Story along Florida's Panhandle and beyond.">
+  <link rel="canonical" href="https://infinitelovestory.com/portfolio">
+  <meta property="og:title" content="Portfolio — Infinite Love Story">
+  <meta property="og:description" content="A curated portfolio of weddings, elopements, engagements, and destination sessions.">
+  <div data-include="partials/meta.html"></div>
+</head>
+
+<body data-page="portfolio">
+  <div class="page-wrapper">
+    <div data-include="partials/header.html"></div>
+
+    <main id="main">
+
+      <section class="section_page-header">
+        <div class="container-medium">
+          <p class="text-style-eyebrow">The work</p>
+          <h1>Portfolio</h1>
+          <p class="lede">A small, edited selection. Tap any photo to view it full size.</p>
+        </div>
+      </section>
+
+      <div class="portfolio-filters" data-portfolio-filters role="tablist" aria-label="Filter photographs by category">
+        <!-- chips injected by portfolio.js -->
+      </div>
+
+      <section class="container-large">
+        <div class="portfolio-grid" data-portfolio-grid aria-live="polite">
+          <!-- items injected by portfolio.js -->
+        </div>
+      </section>
+
+      <section class="section_pixieset padding-section-medium">
+        <div class="container-medium text-align-center">
+          <p class="text-style-eyebrow">Client galleries</p>
+          <h2 class="text-style-italic" style="font-weight:300;margin-top:var(--space-xs)">Browse full collections on Pixieset</h2>
+          <p style="max-width:50ch;margin:var(--space-md) auto;color:var(--mute)">
+            Recent weddings live in private password-protected galleries. Couples with their gallery code can view, favorite, and download.
+          </p>
+
+          <div class="pixieset-embed" data-pixieset-embed></div>
+
+          <p style="margin-top:var(--space-lg)">
+            <a class="button is-secondary" data-pixieset-link href="https://shanedrummondphoto.pixieset.com/" target="_blank" rel="noopener">Open Pixieset</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="padding-section-medium" style="background:var(--ink);color:var(--paper)">
+        <div class="container-medium text-align-center">
+          <h2 class="text-style-italic" style="font-weight:300;color:var(--paper)">Like what you see?</h2>
+          <p style="margin:var(--space-md) auto;max-width:42ch;color:rgba(250,247,242,0.85)">Tell us about your day. We respond within 24 hours.</p>
+          <a class="button is-primary" href="pages/contact.html">Begin your story</a>
+        </div>
+      </section>
+
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+  </div>
+
+  <script src="assets/js/include.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/image-fallback.js" defer></script>
+  <script src="assets/js/data-loader.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+  <script src="assets/js/lightbox.js" defer></script>
+  <script src="assets/js/portfolio.js" defer></script>
+</body>
+</html>

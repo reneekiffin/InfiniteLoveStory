@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="../">
+  <title>Contact — Infinite Love Story</title>
+  <meta name="description" content="Get in touch with Infinite Love Story to inquire about wedding, elopement, or destination photography along Florida's 30A.">
+  <link rel="canonical" href="https://infinitelovestory.com/contact">
+  <meta property="og:title" content="Contact — Infinite Love Story">
+  <div data-include="partials/meta.html"></div>
+</head>
+
+<body data-page="contact">
+  <div class="page-wrapper">
+    <div data-include="partials/header.html"></div>
+
+    <main id="main">
+
+      <section class="section_page-header">
+        <div class="container-medium">
+          <p class="text-style-eyebrow">Begin your story</p>
+          <h1>Let&rsquo;s talk.</h1>
+          <p class="lede">Tell us about your day. We respond within 24 hours, usually with a video-call link to chat through dates and details.</p>
+        </div>
+      </section>
+
+      <section class="container-large padding-section-large">
+        <div class="contact-grid">
+
+          <form class="contact-form" action="#" method="post" novalidate aria-label="Inquiry form">
+            <div>
+              <label for="c-name">Your names</label>
+              <input id="c-name" name="couple" type="text" required autocomplete="name" placeholder="Ella &amp; Marcus">
+            </div>
+
+            <div>
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" required autocomplete="email" placeholder="hello@example.com">
+            </div>
+
+            <div>
+              <label for="c-date">Wedding date (or approximate month)</label>
+              <input id="c-date" name="date" type="text" placeholder="October 2026">
+            </div>
+
+            <div>
+              <label for="c-venue">Venue or location</label>
+              <input id="c-venue" name="venue" type="text" placeholder="Alys Beach, FL — or undecided">
+            </div>
+
+            <div>
+              <label for="c-guests">Approximate guest count</label>
+              <input id="c-guests" name="guests" type="text" placeholder="60">
+            </div>
+
+            <div>
+              <label for="c-tier">Collection you&rsquo;re considering</label>
+              <select id="c-tier" name="tier" data-contact-tier>
+                <option value="">Not sure yet</option>
+                <option value="essential">Essential</option>
+                <option value="signature">Signature</option>
+                <option value="heirloom">Heirloom</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="c-msg">Tell us about your day</label>
+              <textarea id="c-msg" name="message" placeholder="The kind of wedding you&rsquo;re planning, what&rsquo;s most important to you, anything else we should know."></textarea>
+            </div>
+
+            <button class="button is-primary" type="submit">Send inquiry</button>
+            <p class="text-style-caption">We never share your details. Replies usually within 24 hours.</p>
+          </form>
+
+          <div>
+            <p class="text-style-eyebrow">Or, book a call directly</p>
+            <h2 class="text-style-italic" style="font-weight:300;margin-top:var(--space-xs);margin-bottom:var(--space-md)">Open a HoneyBook intake</h2>
+            <div class="honeybook-embed" data-honeybook>
+              <!-- HoneyBook Smart File embed will render here once site.json → contact.honeybook_smart_file_embed is set. -->
+            </div>
+
+            <p style="margin-top:var(--space-lg);color:var(--mute);font-size:0.95rem">
+              Prefer email? Reach Shane directly at
+              <a href="mailto:hello@infinitelovestory.com" style="text-decoration:underline">hello@infinitelovestory.com</a>.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+  </div>
+
+  <script src="assets/js/include.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/image-fallback.js" defer></script>
+  <script src="assets/js/data-loader.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</body>
+</html>
