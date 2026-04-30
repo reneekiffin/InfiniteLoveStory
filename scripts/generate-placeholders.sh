@@ -38,6 +38,9 @@ SLOTS=(
   "engagements-gallery-item|3:2|Engagements gallery — drop curated images here"
   "elopements-gallery-item|3:2|Elopements gallery — drop curated images here"
   "destination-gallery-item|3:2|Destination gallery — drop curated images here"
+  "featured-couple-portrait|2:3|Featured — couple portrait, intimate outdoor"
+  "featured-bridal-lehenga|2:3|Featured — bridal portrait, ballroom editorial"
+  "featured-reception-bhangra|3:2|Featured — bhangra reception celebration"
 )
 
 write_svg() {

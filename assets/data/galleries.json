@@ -27,6 +27,10 @@
     { "id": "d-01", "category": "destination", "slot": "destination-gallery-item","alt": "Beach ceremony with white linen aisle.",                      "aspect": "3:2", "folder": "destination","filename": "destination-01" },
     { "id": "d-02", "category": "destination", "slot": "destination-gallery-item","alt": "Veil caught in coastal wind.",                                 "aspect": "4:5", "folder": "destination","filename": "destination-02" },
     { "id": "d-03", "category": "destination", "slot": "destination-gallery-item","alt": "Reception tablescape in soft pinks and creams.",               "aspect": "3:2", "folder": "destination","filename": "destination-03" },
-    { "id": "d-04", "category": "destination", "slot": "destination-gallery-item","alt": "Bride walking ankle-deep in turquoise water.",                 "aspect": "4:5", "folder": "destination","filename": "destination-04" }
+    { "id": "d-04", "category": "destination", "slot": "destination-gallery-item","alt": "Bride walking ankle-deep in turquoise water.",                 "aspect": "4:5", "folder": "destination","filename": "destination-04" },
+
+    { "id": "f-01", "category": "weddings",   "slot": "featured-bridal-lehenga",   "alt": "Bride in red and gold lehenga beneath a crystal chandelier.", "aspect": "4:5", "folder": "featured", "filename": "bridal-lehenga",     "single_size": true },
+    { "id": "f-02", "category": "weddings",   "slot": "featured-couple-portrait",  "alt": "Couple share an intimate moment outdoors.",                   "aspect": "4:5", "folder": "featured", "filename": "couple-portrait",    "single_size": true },
+    { "id": "f-03", "category": "weddings",   "slot": "featured-reception-bhangra","alt": "Bhangra dancers mid-leap during a wedding reception.",        "aspect": "3:2", "folder": "featured", "filename": "reception-bhangra",  "single_size": true }
   ]
 }

@@ -34,15 +34,18 @@
 
       // Items
       grid.innerHTML = items.map(function (it) {
-        var src = "assets/images/" + it.folder + "/" + it.filename + "-tablet.jpg";
+        // single_size files are shipped as one .jpg with no responsive suffix.
+        var basePath = "assets/images/" + it.folder + "/" + it.filename;
+        var thumb = it.single_size ? (basePath + ".jpg") : (basePath + "-tablet.jpg");
+        var full  = it.single_size ? (basePath + ".jpg") : (basePath + "-desktop.jpg");
         var aspectClass = it.aspect === "4:5" ? "is-portrait" : "is-landscape";
         return (
           '<button class="portfolio-grid__item ' + aspectClass + '" type="button"' +
             ' data-cat="' + it.category + '"' +
-            ' data-src="assets/images/' + it.folder + '/' + it.filename + '-desktop.jpg"' +
+            ' data-src="' + full + '"' +
             ' data-alt="' + escapeAttr(it.alt) + '"' +
             ' aria-label="Open photo: ' + escapeAttr(it.alt) + '">' +
-            '<img src="' + src + '"' +
+            '<img src="' + thumb + '"' +
               ' data-slot="' + it.slot + '"' +
               ' alt="' + escapeAttr(it.alt) + '"' +
               ' loading="lazy" decoding="async">' +

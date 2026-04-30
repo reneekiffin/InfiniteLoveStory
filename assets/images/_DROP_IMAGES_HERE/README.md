@@ -1,5 +1,24 @@
 # Drop Images Here
 
+> **Featured photos awaiting drop:**
+> Three images are wired into the homepage layout but the JPEG files
+> haven't been saved yet. Save each at the exact path below and the
+> placeholder SVGs will disappear:
+>
+> | Photo | Save to |
+> |---|---|
+> | Couple portrait (intimate, outdoor, navy suit + beaded gown) | `assets/images/featured/couple-portrait.jpg` |
+> | Bridal lehenga (red & gold, ballroom chandelier) | `assets/images/featured/bridal-lehenga.jpg` |
+> | Bhangra dancers (reception celebration, mid-leap) | `assets/images/featured/reception-bhangra.jpg` |
+>
+> Single file per slot — no responsive variants needed for these three.
+> The browser scales them down for smaller screens. If you want maximum
+> performance later, run `./scripts/process-images.sh assets/images/featured/`
+> and the script will generate -mobile / -tablet / -desktop variants.
+
+---
+
+
 This is your **staging folder**. The site does **not** read from here. Drop raw exports
 from Pixieset (or any other source) into this folder, then sort them into the
 appropriate destination folder under `/assets/images/`.
