@@ -130,30 +130,33 @@
 }
 
 .nav__logo {
-  /* Italiana stands in until Shane's actual logo file lands.
-     High-contrast fashion-magazine serif — title case, light tracking,
-     reads as elegant rather than corporate at small sizes. */
-  font-family: var(--font-wordmark);
-  font-weight: 400;
-  font-size: clamp(1.25rem, 1rem + 0.6vw, 1.6rem);
-  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
   line-height: 1;
-  color: var(--ink);
-  text-transform: none;
 }
 
-.nav__logo-wordmark {
+.nav__logo-img {
   display: block;
-  line-height: 1;
+  height: 40px;
+  width: auto;
+  /* The logo PNG is on white; the nav background is paper (also warm cream),
+     so blend modes aren't needed. Over the transparent-on-hero state, the
+     PNG sits over photography — invert via filter for legibility. */
+  transition: filter var(--dur-base) var(--ease-out);
 }
-.nav__logo-tagline {
-  display: block;
-  font-family: var(--font-script);
-  font-size: 0.75rem;
-  letter-spacing: 0;
-  color: var(--gilt);
-  text-transform: none;
-  margin-top: 0.15em;
+
+@media (min-width: 1024px) {
+  .nav__logo-img { height: 52px; }
+}
+
+/* When nav is transparent (over hero photography), invert the dark logo to
+   white so it reads on the image. Revert when scrolled. */
+.nav.is-transparent .nav__logo-img {
+  filter: brightness(0) invert(1);
+}
+.nav.is-scrolled .nav__logo-img,
+.nav:not(.is-transparent) .nav__logo-img {
+  filter: none;
 }
 
 .nav__links {

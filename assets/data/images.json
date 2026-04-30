@@ -176,22 +176,15 @@
     "featured-couple-portrait": {
       "folder": "featured",
       "filename": "couple-portrait",
-      "aspect": "2:3",
-      "description": "Vertical, intimate couple portrait — used as the mobile hero source on the homepage. Outdoor green hedge background, bride in beaded white gown, groom in royal blue suit.",
-      "single_size": true
-    },
-    "featured-bridal-lehenga": {
-      "folder": "featured",
-      "filename": "bridal-lehenga",
-      "aspect": "2:3",
-      "description": "Editorial bridal portrait — bride in red and gold lehenga beneath a crystal chandelier in an opulent ballroom. Used in the homepage Weddings feature card.",
-      "single_size": true
-    },
-    "featured-reception-bhangra": {
-      "folder": "featured",
-      "filename": "reception-bhangra",
       "aspect": "3:2",
-      "description": "Vibrant bhangra dancers mid-leap during a wedding reception. Used in the homepage second storytelling row.",
+      "description": "Tender forehead-to-forehead couple portrait, bride in white hijab and lace gown. Used as the mobile homepage hero source.",
+      "single_size": true
+    },
+    "featured-bride-portrait": {
+      "folder": "featured",
+      "filename": "bride-portrait",
+      "aspect": "4:5",
+      "description": "Editorial bridal portrait by a sunlit window, beaded gown, looking back over the shoulder.",
       "single_size": true
     }
   }

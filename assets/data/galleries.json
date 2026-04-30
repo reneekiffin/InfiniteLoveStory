@@ -2,35 +2,21 @@
   "categories": [
     { "id": "all",         "label": "All" },
     { "id": "weddings",    "label": "Weddings" },
-    { "id": "elopements",  "label": "Elopements" },
     { "id": "engagements", "label": "Engagements" },
     { "id": "destination", "label": "Destination" }
   ],
   "items": [
-    { "id": "w-01", "category": "weddings",    "slot": "weddings-gallery-item",   "alt": "Bride and groom share a quiet moment before the ceremony.",   "aspect": "3:2", "folder": "weddings",   "filename": "wedding-01" },
-    { "id": "w-02", "category": "weddings",    "slot": "weddings-gallery-item",   "alt": "Detail of bridal bouquet on a linen runner.",                  "aspect": "4:5", "folder": "weddings",   "filename": "wedding-02" },
-    { "id": "w-03", "category": "weddings",    "slot": "weddings-gallery-item",   "alt": "First look at golden hour beneath palms.",                     "aspect": "3:2", "folder": "weddings",   "filename": "wedding-03" },
-    { "id": "w-04", "category": "weddings",    "slot": "weddings-gallery-item",   "alt": "Reception toast captured in low candlelight.",                 "aspect": "4:5", "folder": "weddings",   "filename": "wedding-04" },
-    { "id": "w-05", "category": "weddings",    "slot": "weddings-gallery-item",   "alt": "Couple's first dance under bistro lights.",                    "aspect": "3:2", "folder": "weddings",   "filename": "wedding-05" },
-    { "id": "w-06", "category": "weddings",    "slot": "weddings-gallery-item",   "alt": "Mother of the bride zipping a vintage gown.",                  "aspect": "4:5", "folder": "weddings",   "filename": "wedding-06" },
+    { "id": "w-01", "category": "weddings",    "slot": "weddings-gallery-item",    "alt": "Bride and groom share a quiet forehead-to-forehead moment with an autumn bouquet.", "aspect": "4:5", "folder": "weddings",   "filename": "wedding-01",    "single_size": true },
+    { "id": "w-02", "category": "weddings",    "slot": "weddings-gallery-item",    "alt": "Couple share a tender forehead-touch beside a yellow rose, autumn foliage behind.", "aspect": "3:2", "folder": "weddings",   "filename": "wedding-02",    "single_size": true },
+    { "id": "w-03", "category": "weddings",    "slot": "weddings-gallery-item",    "alt": "Couple share a candid moment in a wood-paneled library.",                          "aspect": "3:2", "folder": "weddings",   "filename": "wedding-03",    "single_size": true },
+    { "id": "w-04", "category": "weddings",    "slot": "weddings-gallery-item",    "alt": "Newly-married couple holding hands against a soft mint-painted house.",            "aspect": "4:5", "folder": "weddings",   "filename": "wedding-04",    "single_size": true },
+    { "id": "f-01", "category": "weddings",    "slot": "featured-couple-portrait", "alt": "Couple share a tender forehead-to-forehead moment, bride in lace and veil.",        "aspect": "3:2", "folder": "featured",   "filename": "couple-portrait", "single_size": true },
+    { "id": "f-02", "category": "weddings",    "slot": "featured-bride-portrait",  "alt": "Bride looking back over her shoulder by a sunlit window in a beaded gown.",         "aspect": "4:5", "folder": "featured",   "filename": "bride-portrait",  "single_size": true },
 
-    { "id": "e-01", "category": "elopements",  "slot": "elopements-gallery-item", "alt": "Two people exchange vows on a windswept beach.",               "aspect": "3:2", "folder": "elopements", "filename": "elopement-01" },
-    { "id": "e-02", "category": "elopements",  "slot": "elopements-gallery-item", "alt": "Couple walking the shoreline at dusk.",                        "aspect": "4:5", "folder": "elopements", "filename": "elopement-02" },
-    { "id": "e-03", "category": "elopements",  "slot": "elopements-gallery-item", "alt": "Hand-tied ribbon detail on a small bouquet.",                  "aspect": "3:2", "folder": "elopements", "filename": "elopement-03" },
-    { "id": "e-04", "category": "elopements",  "slot": "elopements-gallery-item", "alt": "Two-person ceremony beneath a single tree.",                   "aspect": "4:5", "folder": "elopements", "filename": "elopement-04" },
+    { "id": "e-01", "category": "engagements", "slot": "engagements-gallery-item", "alt": "Beach proposal — partner kneeling beside a hand-lettered ‘She Said Yes’ sign.",     "aspect": "4:5", "folder": "engagements","filename": "engagement-01", "single_size": true },
+    { "id": "e-02", "category": "engagements", "slot": "engagements-gallery-item", "alt": "Couple sitting in soft Gulf-coast dunes amongst sea oats.",                         "aspect": "3:2", "folder": "engagements","filename": "engagement-02", "single_size": true },
 
-    { "id": "g-01", "category": "engagements", "slot": "engagements-gallery-item","alt": "Engaged couple laughing on a quiet street at golden hour.",    "aspect": "3:2", "folder": "engagements","filename": "engagement-01" },
-    { "id": "g-02", "category": "engagements", "slot": "engagements-gallery-item","alt": "Detail of an engagement ring against linen.",                  "aspect": "4:5", "folder": "engagements","filename": "engagement-02" },
-    { "id": "g-03", "category": "engagements", "slot": "engagements-gallery-item","alt": "Couple silhouetted against the Gulf at sunset.",               "aspect": "3:2", "folder": "engagements","filename": "engagement-03" },
-    { "id": "g-04", "category": "engagements", "slot": "engagements-gallery-item","alt": "Quiet portrait beneath an oak tree.",                          "aspect": "4:5", "folder": "engagements","filename": "engagement-04" },
-
-    { "id": "d-01", "category": "destination", "slot": "destination-gallery-item","alt": "Beach ceremony with white linen aisle.",                      "aspect": "3:2", "folder": "destination","filename": "destination-01" },
-    { "id": "d-02", "category": "destination", "slot": "destination-gallery-item","alt": "Veil caught in coastal wind.",                                 "aspect": "4:5", "folder": "destination","filename": "destination-02" },
-    { "id": "d-03", "category": "destination", "slot": "destination-gallery-item","alt": "Reception tablescape in soft pinks and creams.",               "aspect": "3:2", "folder": "destination","filename": "destination-03" },
-    { "id": "d-04", "category": "destination", "slot": "destination-gallery-item","alt": "Bride walking ankle-deep in turquoise water.",                 "aspect": "4:5", "folder": "destination","filename": "destination-04" },
-
-    { "id": "f-01", "category": "weddings",   "slot": "featured-bridal-lehenga",   "alt": "Bride in red and gold lehenga beneath a crystal chandelier.", "aspect": "4:5", "folder": "featured", "filename": "bridal-lehenga",     "single_size": true },
-    { "id": "f-02", "category": "weddings",   "slot": "featured-couple-portrait",  "alt": "Couple share an intimate moment outdoors.",                   "aspect": "4:5", "folder": "featured", "filename": "couple-portrait",    "single_size": true },
-    { "id": "f-03", "category": "weddings",   "slot": "featured-reception-bhangra","alt": "Bhangra dancers mid-leap during a wedding reception.",        "aspect": "3:2", "folder": "featured", "filename": "reception-bhangra",  "single_size": true }
+    { "id": "d-01", "category": "destination", "slot": "destination-gallery-item", "alt": "Couple's vow renewal at golden hour on a 30A beach.",                              "aspect": "3:2", "folder": "heroes",     "filename": "hero-homepage", "single_size": true },
+    { "id": "d-02", "category": "destination", "slot": "destination-gallery-item", "alt": "Couple share a windswept moment beside a twisted live-oak, veil flowing.",         "aspect": "3:2", "folder": "heroes",     "filename": "final-cta",     "single_size": true }
   ]
 }
