@@ -1,7 +1,8 @@
 /* ==========================================================================
    include.js — Lightweight HTML partial injector.
    Replaces any element with [data-include="<path>"] with the fetched HTML.
-   Resolves relative paths against the document root (paths must start with /).
+   Paths are RELATIVE — resolved against the document's <base> tag, so the
+   site works whether served from root or a subpath (e.g. GitHub Pages).
    Dispatches "partials:loaded" on document when all includes have resolved
    so that nav.js and other dependents can attach listeners after injection.
    ========================================================================== */

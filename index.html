@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- IMPORTANT: <base> must be first so all relative URLs (CSS, fonts, JS,
+       partials, images) resolve correctly whether the site is served from
+       the domain root or from a subpath like GitHub Pages /repo-name/. -->
+  <base href="./">
+
   <title>Infinite Love Story — Florida Panhandle Wedding Photography</title>
   <meta name="description" content="Editorial wedding and elopement photography along Florida's 30A and Panama City Beach. Capturing timeless moments of love and commitment.">
   <link rel="canonical" href="https://infinitelovestory.com/">
@@ -9,21 +14,20 @@
   <meta property="og:url" content="https://infinitelovestory.com/">
 
   <!-- Shared meta + stylesheets + fonts. -->
-  <div data-include="/partials/meta.html"></div>
+  <div data-include="partials/meta.html"></div>
 </head>
 
 <body class="has-hero" data-page="home" data-nav-style="transparent">
 
   <div class="page-wrapper">
 
-    <!-- Header injected from /partials/header.html -->
-    <div data-include="/partials/header.html"></div>
+    <!-- Header injected from partials/header.html -->
+    <div data-include="partials/header.html"></div>
 
     <main id="main">
 
       <!-- ============================================================
            Section: Homepage Hero
-           Step-1 deliverable. Responsive at 320 / 768 / 1280+.
            ============================================================ -->
       <section class="section_hero" aria-label="Welcome">
 
@@ -33,27 +37,27 @@
             <source
               media="(max-width: 767px)"
               type="image/webp"
-              srcset="/assets/images/heroes/hero-homepage-mobile.webp 800w,
-                      /assets/images/heroes/hero-homepage-tablet.webp 1400w"
+              srcset="assets/images/heroes/hero-homepage-mobile.webp 800w,
+                      assets/images/heroes/hero-homepage-tablet.webp 1400w"
               sizes="100vw">
             <source
               media="(max-width: 767px)"
-              srcset="/assets/images/heroes/hero-homepage-mobile.jpg 800w,
-                      /assets/images/heroes/hero-homepage-tablet.jpg 1400w"
+              srcset="assets/images/heroes/hero-homepage-mobile.jpg 800w,
+                      assets/images/heroes/hero-homepage-tablet.jpg 1400w"
               sizes="100vw">
 
             <!-- Tablet & desktop: 16:9 -->
             <source
               type="image/webp"
-              srcset="/assets/images/heroes/hero-homepage-tablet.webp 1400w,
-                      /assets/images/heroes/hero-homepage-desktop.webp 2400w"
+              srcset="assets/images/heroes/hero-homepage-tablet.webp 1400w,
+                      assets/images/heroes/hero-homepage-desktop.webp 2400w"
               sizes="(max-width: 1279px) 100vw, 100vw">
 
             <img
-              src="/assets/images/heroes/hero-homepage-desktop.jpg"
-              srcset="/assets/images/heroes/hero-homepage-mobile.jpg 800w,
-                      /assets/images/heroes/hero-homepage-tablet.jpg 1400w,
-                      /assets/images/heroes/hero-homepage-desktop.jpg 2400w"
+              src="assets/images/heroes/hero-homepage-desktop.jpg"
+              srcset="assets/images/heroes/hero-homepage-mobile.jpg 800w,
+                      assets/images/heroes/hero-homepage-tablet.jpg 1400w,
+                      assets/images/heroes/hero-homepage-desktop.jpg 2400w"
               sizes="100vw"
               data-slot="hero-homepage"
               alt="A couple shares a quiet moment at golden hour on a 30A beach."
@@ -79,36 +83,207 @@
           </p>
 
           <div class="hero__actions">
-            <a class="button is-primary is-large" href="/pages/contact.html">Book your story</a>
-            <a class="button is-text" href="/pages/portfolio.html">View the portfolio &rarr;</a>
+            <a class="button is-primary is-large" href="pages/contact.html">Book your story</a>
+            <a class="button is-text" href="pages/portfolio.html">View the portfolio &rarr;</a>
           </div>
         </div>
 
-        <!-- Scroll indicator (desktop only). Hand-drawn arrow placeholder until step 3 SVG library lands. -->
-        <svg class="hero__scroll-indicator" viewBox="0 0 64 96" aria-hidden="true">
-          <path d="M32 8 V 78" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
-          <path d="M22 66 Q 32 84, 42 66" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
-          <text x="32" y="94" text-anchor="middle"
-                font-family="Cinzel, serif" font-size="7" letter-spacing="2"
-                fill="currentColor">SCROLL</text>
-        </svg>
+        <img class="hero__scroll-indicator" src="assets/svg/arrow-hand-drawn.svg" alt="" width="96" height="48">
       </section>
 
-      <!-- Subsequent homepage sections (intro, featured galleries, story rows,
-           testimonial carousel, packages teaser, lead magnet, instagram, final CTA)
-           are scoped to step 2 in the build order. -->
+      <!-- Brand intro -->
+      <section class="section_intro padding-section-large" aria-labelledby="intro-h">
+        <div class="container-small text-align-center">
+          <img class="decoration is-md hide-on-tiny" src="assets/svg/botanical-sprig-1.svg" alt="" style="margin-inline:auto;color:var(--gilt)">
+          <p class="text-style-eyebrow" style="margin-top:var(--space-md)">A note from Shane</p>
+          <h2 id="intro-h" class="text-style-italic" style="margin-top:var(--space-xs);font-weight:300">A photographer for the slow, the true, and the unscripted.</h2>
+          <p style="margin-inline:auto;margin-top:var(--space-md);max-width:50ch;color:var(--mute);font-size:var(--fs-lead);font-family:var(--font-heading);font-style:italic;line-height:var(--lh-snug)">
+            I photograph weddings the way you'd remember them years from now — in soft
+            light, in glances exchanged across the room, in the quiet between the loud
+            parts. Editorial in tone, gentle in pace.
+          </p>
+        </div>
+      </section>
+
+      <!-- Featured galleries -->
+      <section class="section_featured padding-section-large" style="background:var(--cream)" aria-labelledby="featured-h">
+        <div class="container-large">
+          <div class="text-align-center" style="margin-bottom:var(--space-2xl)">
+            <p class="text-style-eyebrow">The Work</p>
+            <h2 id="featured-h" class="text-style-italic" style="font-weight:300">Choose your chapter</h2>
+          </div>
+
+          <div class="grid_asymmetric">
+            <a class="feature-card" href="pages/portfolio.html#weddings">
+              <div class="image-frame is-portrait">
+                <img src="assets/images/weddings/feature-weddings-desktop.jpg" data-slot="homepage-feature-weddings" alt="Bridal moment from a 30A wedding." loading="lazy" decoding="async">
+              </div>
+              <h3 class="feature-card__title">Weddings</h3>
+              <p class="feature-card__sub">Full days, told quietly.</p>
+            </a>
+            <a class="feature-card" href="pages/portfolio.html#engagements">
+              <div class="image-frame is-portrait">
+                <img src="assets/images/engagements/feature-engagements-desktop.jpg" data-slot="homepage-feature-engagements" alt="Engagement session at golden hour." loading="lazy" decoding="async">
+              </div>
+              <h3 class="feature-card__title">Engagements</h3>
+              <p class="feature-card__sub">A first chapter to keep.</p>
+            </a>
+            <a class="feature-card" href="pages/portfolio.html#elopements">
+              <div class="image-frame is-portrait">
+                <img src="assets/images/elopements/feature-elopements-desktop.jpg" data-slot="homepage-feature-elopements" alt="Intimate two-person elopement." loading="lazy" decoding="async">
+              </div>
+              <h3 class="feature-card__title">Elopements</h3>
+              <p class="feature-card__sub">Just the two of you.</p>
+            </a>
+            <a class="feature-card" href="pages/portfolio.html#destination">
+              <div class="image-frame is-portrait">
+                <img src="assets/images/destination/feature-destination-desktop.jpg" data-slot="homepage-feature-destination" alt="Beach wedding along the Gulf." loading="lazy" decoding="async">
+              </div>
+              <h3 class="feature-card__title">Destination</h3>
+              <p class="feature-card__sub">Anywhere the love takes you.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Storytelling rows -->
+      <section class="section_story padding-section-large" aria-labelledby="story-h">
+        <div class="container-large">
+          <p class="text-style-eyebrow text-align-center">The Approach</p>
+          <h2 id="story-h" class="text-style-italic text-align-center" style="font-weight:300;margin-bottom:var(--space-2xl)">How a wedding day with us actually feels.</h2>
+
+          <div class="story-row" data-reveal>
+            <div class="image-frame is-landscape">
+              <img src="assets/images/weddings/story-1-desktop.jpg" data-slot="homepage-story-1" alt="Couple in a quiet getting-ready moment." loading="lazy" decoding="async">
+            </div>
+            <div class="story-row__copy">
+              <p class="text-style-eyebrow">First — we plan</p>
+              <h3 class="text-style-italic" style="font-weight:300">A timeline that protects the small moments.</h3>
+              <p>Before the day, we map a timeline that leaves room for breath — the look between you and your dad before the aisle, the first quiet minute after the ceremony. The photographs come from those breaths.</p>
+            </div>
+          </div>
+
+          <div class="story-row is-reverse" data-reveal>
+            <div class="image-frame is-landscape">
+              <img src="assets/images/destination/story-2-desktop.jpg" data-slot="homepage-story-2" alt="Beach wedding detail." loading="lazy" decoding="async">
+            </div>
+            <div class="story-row__copy">
+              <p class="text-style-eyebrow">Then — we vanish</p>
+              <h3 class="text-style-italic" style="font-weight:300">Present, but never in the way.</h3>
+              <p>We dress in soft tones, move slowly, and stay out of your guests' photos. Most couples tell us afterwards they barely noticed the camera. That's the whole job.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial carousel -->
+      <section class="section_testimonials padding-section-large" style="background:var(--ink);color:var(--paper)" aria-labelledby="t-h">
+        <div class="container-medium text-align-center">
+          <img class="decoration is-md" src="assets/svg/crescent-moon.svg" alt="" style="margin-inline:auto;color:var(--blush)">
+          <p class="text-style-eyebrow" style="color:var(--blush);margin-top:var(--space-md)">Love letters</p>
+          <h2 id="t-h" class="visually-hidden">What couples say</h2>
+
+          <div class="testimonial-carousel" data-carousel aria-live="polite"></div>
+
+          <div class="testimonial-carousel__controls">
+            <button class="t-control" data-carousel-prev type="button" aria-label="Previous testimonial">&larr;</button>
+            <div class="t-dots" data-carousel-dots role="tablist" aria-label="Choose testimonial"></div>
+            <button class="t-control" data-carousel-next type="button" aria-label="Next testimonial">&rarr;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Packages teaser -->
+      <section class="section_packages-teaser padding-section-large" aria-labelledby="pk-h">
+        <div class="container-large">
+          <div class="text-align-center" style="margin-bottom:var(--space-2xl)">
+            <p class="text-style-eyebrow">Collections</p>
+            <h2 id="pk-h" class="text-style-italic" style="font-weight:300">Three ways to be photographed</h2>
+          </div>
+          <div class="packages-row" data-packages-teaser></div>
+          <p class="text-align-center" style="margin-top:var(--space-xl)">
+            <a class="button is-secondary" href="pages/packages.html">See full pricing &amp; what's included</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Lead magnet -->
+      <section class="section_leadmagnet padding-section-large" style="background:var(--cream)" aria-labelledby="lm-h">
+        <div class="container-medium leadmagnet">
+          <div class="leadmagnet__visual">
+            <div class="image-frame" style="aspect-ratio: 3 / 4">
+              <img src="assets/images/lead-magnet/wedding-guide-mockup-desktop.jpg" data-slot="lead-magnet-cover" alt="Cover of the Infinite Love Story wedding planning guide." loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="leadmagnet__copy">
+            <p class="text-style-eyebrow">Free guide</p>
+            <h2 id="lm-h" class="text-style-italic" style="font-weight:300;margin-bottom:var(--space-md)">The 30A Wedding Planning Guide.</h2>
+            <p style="margin-bottom:var(--space-md)">Twenty-six pages on choosing your venue, building a timeline that breathes, picking vendors who match your aesthetic, and the small things destination brides forget.</p>
+            <form class="leadmagnet__form" action="#" method="post" novalidate aria-label="Download the wedding planning guide">
+              <label class="visually-hidden" for="lm-email">Email address</label>
+              <input id="lm-email" type="email" name="email" placeholder="your@email.com" required>
+              <button class="button is-primary" type="submit">Send me the guide</button>
+            </form>
+            <p class="text-style-caption" style="margin-top:var(--space-xs)">No spam. Unsubscribe in one click.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instagram strip (static, links to profile — no API) -->
+      <section class="section_instagram padding-section-medium" aria-labelledby="ig-h">
+        <div class="container-large">
+          <div class="text-align-center" style="margin-bottom:var(--space-lg)">
+            <p class="text-style-eyebrow">Follow along</p>
+            <h2 id="ig-h" class="text-style-italic" style="font-weight:300;font-size:var(--fs-h4)">@infinitelove.story</h2>
+          </div>
+          <div class="ig-strip">
+            <a class="ig-tile" href="https://www.instagram.com/infinitelove.story" target="_blank" rel="noopener">
+              <img src="assets/images/weddings/wedding-01-tablet.jpg" data-slot="weddings-gallery-item" alt="" loading="lazy">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/infinitelove.story" target="_blank" rel="noopener">
+              <img src="assets/images/engagements/engagement-01-tablet.jpg" data-slot="engagements-gallery-item" alt="" loading="lazy">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/infinitelove.story" target="_blank" rel="noopener">
+              <img src="assets/images/destination/destination-01-tablet.jpg" data-slot="destination-gallery-item" alt="" loading="lazy">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/infinitelove.story" target="_blank" rel="noopener">
+              <img src="assets/images/elopements/elopement-01-tablet.jpg" data-slot="elopements-gallery-item" alt="" loading="lazy">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/infinitelove.story" target="_blank" rel="noopener">
+              <img src="assets/images/weddings/wedding-02-tablet.jpg" data-slot="weddings-gallery-item" alt="" loading="lazy">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/infinitelove.story" target="_blank" rel="noopener">
+              <img src="assets/images/destination/destination-02-tablet.jpg" data-slot="destination-gallery-item" alt="" loading="lazy">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="section_final-cta" aria-labelledby="fcta-h">
+        <div class="final-cta__media">
+          <img src="assets/images/heroes/final-cta-desktop.jpg" data-slot="homepage-final-cta" alt="Couple silhouetted against the Gulf at sunset." loading="lazy" decoding="async">
+        </div>
+        <div class="final-cta__content container-medium text-align-center">
+          <h2 id="fcta-h" class="text-style-italic" style="font-weight:300">Let&rsquo;s make something you&rsquo;ll keep forever.</h2>
+          <p style="max-width:42ch;margin-inline:auto;margin-top:var(--space-md);color:rgba(250,247,242,0.85)">A short conversation tells us if we're the right fit. There's no pressure, no script.</p>
+          <a class="button is-primary is-large" href="pages/contact.html" style="margin-top:var(--space-lg)">Begin your story</a>
+        </div>
+      </section>
 
     </main>
 
-    <!-- Footer injected from /partials/footer.html -->
-    <div data-include="/partials/footer.html"></div>
+    <!-- Footer injected from partials/footer.html -->
+    <div data-include="partials/footer.html"></div>
 
   </div>
 
-  <!-- Scripts: include first so partials inject before nav.js binds. -->
-  <script src="/assets/js/include.js" defer></script>
-  <script src="/assets/js/nav.js" defer></script>
-  <script src="/assets/js/image-fallback.js" defer></script>
-  <script src="/assets/js/data-loader.js" defer></script>
+  <script src="assets/js/include.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/image-fallback.js" defer></script>
+  <script src="assets/js/data-loader.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+  <script src="assets/js/carousel.js" defer></script>
+  <script src="assets/js/homepage.js" defer></script>
 </body>
 </html>

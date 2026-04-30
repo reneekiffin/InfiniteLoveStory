@@ -14,7 +14,8 @@
 (function () {
   "use strict";
 
-  var PLACEHOLDER_BASE = "/assets/images/_placeholders/";
+  // Relative — resolves against the document's <base> tag.
+  var PLACEHOLDER_BASE = "assets/images/_placeholders/";
 
   function attach(img) {
     if (img.dataset.fallbackBound) return;

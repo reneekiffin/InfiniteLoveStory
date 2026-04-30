@@ -8,7 +8,9 @@
 (function () {
   "use strict";
 
-  var DATA_BASE = "/assets/data/";
+  // Relative — resolves against the document's <base> tag so it works on
+  // root-served and subpath-served deployments (e.g. GitHub Pages).
+  var DATA_BASE = "assets/data/";
   var cache = Object.create(null);
 
   function load(name) {
